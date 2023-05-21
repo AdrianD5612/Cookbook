@@ -19,7 +19,7 @@
           <a class="action" href="{{ url_for('cook.update', id=post['id']) }}">Edit</a>
         {% endif %}
       </header>
-      <p class="body">{{ post['body'] }}</p>
+      <p class="ingredients">{{ post['ingredients'] }}</p>
     </article>
     {% if not loop.last %}
       <hr>

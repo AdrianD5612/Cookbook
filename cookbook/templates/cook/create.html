@@ -8,6 +8,8 @@
   <form method="post">
     <label for="title">Name</label>
     <input name="title" id="title" value="{{ request.form['title'] }}" required>
+    <label for="ingredients">Ingredients</label>
+    <textarea name="ingredients" id="ingredients">{{ request.form['ingredients'] }}</textarea>
     <label for="body">Recipe</label>
     <textarea name="body" id="body">{{ request.form['body'] }}</textarea>
     <input type="submit" value="Save">
